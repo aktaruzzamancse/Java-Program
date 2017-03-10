@@ -17,6 +17,9 @@ public class Calculator { //Declare Calculator class
 		System.out.println("Multiply Result = "+multiply_result);//For display output with return value
 		double divide_result = cal.divide(nub1,nub2);
 		System.out.println("Divide Result = "+divide_result);//For display output with return value
+		double average_result = cal.average(nub1,nub2);
+		System.out.println("Average Result = "+average_result);//For display output with return value
+		
 	}//End main method
 	 public double addition (double a,double b){
 		double addition;
@@ -41,6 +44,12 @@ public class Calculator { //Declare Calculator class
 		divide = a/b;
 		//System.out.println("Addition Result = "+addition);
 		return divide;
+	}
+	public double average (double a,double b){
+		double average;
+		average = (a+b)/2;
+		
+		return average;
 	}
 
 }
